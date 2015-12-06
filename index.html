@@ -30,10 +30,10 @@
               <p> <span class="white">Внимание!</span> </p>
               <p><span class="white bold">Есть идеи!</span> </p>
             </div>
- <!--            <div class="headerTextPageOne">
+            <div class="headerTextPageOne">
               <p> <span class="white">Чем заняться?</span> </p>
               <p><span class="white bold">Мы подскажем!</span> </p>
-            </div> -->
+            </div>
 		  </div>
 		  
 		</header>
@@ -43,117 +43,196 @@
 		<main class="main" role="main">
 
 
-
-
+	<!-- Глобальный слайдер  -->
+	<div class="bigSlider">
 
 			<!-- Слайдер выбора настроений --> 
    
-   <div class="sliders">
-		<div class="border borderDow inactive">
-			<div class="slider sliderDow">
-				<div class="icon"><h2>пн</h2></div>
-				<div class="icon"><h2>вт</h2></div>
-				<div class="icon"><h2>ср</h2></div>
-				<div class="icon"><h2>чт</h2></div>
-				<div class="icon"><h2>пт</h2></div>
-				<div class="icon"><h2>сб</h2></div>
-				<div class="icon"><h2>вс</h2></div>
-				<div class="btnUp" id="moodUp">
-					<img src="img/arrow-up.png" alt="">
-				</div>
-				<div class="btnDown" id="moodDown">
-					<img src="img/arrow-down.png" alt="">
-				</div>
+	   <div class="sliders temp">
+
+	   		<!-- Кнопка-стрелка "вперед" -->
+			<div class="btnNext go">
+				<img src="images/arrow-next.png" alt="">
 			</div>
-		</div>
-		<div class="border borderPod inactive">
-			<div class="slider sliderPod">			
-				<div class="icon iconT iconPod"><h2>раннее<br>утро</h2></div>
-				<div class="icon iconT iconPod"><h2>утро</h2></div>
-				<div class="icon iconT iconPod"><h2>день</h2></div>
-				<div class="icon iconT iconPod"><h2>вечер</h2></div>
-				<div class="icon iconT iconPod"><h2>поздний<br>вечер</h2></div>
-				<div class="icon iconT iconPod"><h2>ночь</h2></div>
-				<div class="icon iconT iconPod"><h2>глубокая<br>ночь</h2></div>
-				<div class="btnUp" id="moodUp">
-					<img src="img/arrow-up.png" alt="">
-				</div>
-				<div class="btnDown" id="moodDown">
-					<img src="img/arrow-down.png" alt="">
-				</div>
-			</div>
-		</div>
-		
-		<div class="border borderMood inactive">
-			<div class="slider sliderMood">
-				<div class="icon iconWImg iconMood">
-					<img src="img/1.svg" alt="">
-					<h3 class="txt txtMood">голова0</h3>
-				</div>
-				<div class="icon iconWImg iconMood" id="moodIcon1">
-					<img src="img/2.svg" alt="">
-					<h3 class="txt txtMood">голова1</h3>
-				</div>
-				<div class="icon iconWImg iconMood" id="moodIcon2">
-					<img src="img/3.svg" alt="">
-					<h3 class="txt txtMood">голова2</h3>
-				</div>
-				<div class="icon iconWImg iconMood" id="moodIcon3">
-					<img src="img/4.svg" alt="">
-					<h3 class="txt txtMood">голова3</h3>
-				</div>
-				<div class="icon iconWImg iconMood" id="moodIcon4">
-					<img src="img/5.svg" alt="">
-					<h3 class="txt txtMood">голова4</h3>
-				</div>
-				<div class="btnUp" id="moodUp">
+
+	   		<!--Конец Кнопка-стрелка "вперед" -->
+
+			<div class="border borderDow inactive">
+				<div class="slider sliderDow">
+					<div class="icon"><h2>пн</h2></div>
+					<div class="icon"><h2>вт</h2></div>
+					<div class="icon"><h2>ср</h2></div>
+					<div class="icon"><h2>чт</h2></div>
+					<div class="icon"><h2>пт</h2></div>
+					<div class="icon"><h2>сб</h2></div>
+					<div class="icon"><h2>вс</h2></div>
+					<div class="btnUp" id="moodUp">
 						<img src="img/arrow-up.png" alt="">
+					</div>
+					<div class="btnDown" id="moodDown">
+						<img src="img/arrow-down.png" alt="">
+					</div>
 				</div>
-				<div class="btnDown" id="moodDown">
-					<img src="img/arrow-down.png" alt="">
-				</div>		
-			</div>		
-		</div>
-		
-		<div class="border borderWish inactive">
-			<div class="slider sliderWish">
-				<div class="icon iconWImg iconWish">
-					<img src="img/1.png" alt="">
-					<h3 class="txt txtWish">Расслаблен</h3>
+			</div>
+			<div class="border borderPod inactive">
+				<div class="slider sliderPod">			
+					<div class="icon iconT iconPod"><h2>раннее<br>утро</h2></div>
+					<div class="icon iconT iconPod"><h2>утро</h2></div>
+					<div class="icon iconT iconPod"><h2>день</h2></div>
+					<div class="icon iconT iconPod"><h2>вечер</h2></div>
+					<div class="icon iconT iconPod"><h2>поздний<br>вечер</h2></div>
+					<div class="icon iconT iconPod"><h2>ночь</h2></div>
+					<div class="icon iconT iconPod"><h2>глубокая<br>ночь</h2></div>
+					<div class="btnUp" id="moodUp">
+						<img src="img/arrow-up.png" alt="">
+					</div>
+					<div class="btnDown" id="moodDown">
+						<img src="img/arrow-down.png" alt="">
+					</div>
 				</div>
-				<div class="icon iconWImg iconWish" id="moodIcon1">
-					<img src="img/2.png" alt="">
-					<h3 class="txt txtWish">Влюблен</h3>
-				</div>
-				<div class="icon iconWImg iconWish" id="moodIcon2">
-					<img src="img/3.png" alt="">
-					<h3 class="txt txtWish">Повеселиться</h3>
-				</div>
-				<div class="icon iconWImg iconWish" id="moodIcon3">
-					<img src="img/4.png" alt="">
-					<h3 class="txt txtWish">Поработать</h3>
-				</div>
-				<div class="icon iconWImg iconWish" id="moodIcon4">
-					<img src="img/5.png" alt="">
-					<h3 class="txt txtWish">Медитировать</h3>
-				</div>		
+			</div>
+			
+			<div class="border borderMood inactive">
+				<div class="slider sliderMood">
+					<div class="icon iconWImg iconMood">
+						<img src="img/1.svg" alt="">
+						<h3 class="txt txtMood">голова0</h3>
+					</div>
+					<div class="icon iconWImg iconMood" id="moodIcon1">
+						<img src="img/2.svg" alt="">
+						<h3 class="txt txtMood">голова1</h3>
+					</div>
+					<div class="icon iconWImg iconMood" id="moodIcon2">
+						<img src="img/3.svg" alt="">
+						<h3 class="txt txtMood">голова2</h3>
+					</div>
+					<div class="icon iconWImg iconMood" id="moodIcon3">
+						<img src="img/4.svg" alt="">
+						<h3 class="txt txtMood">голова3</h3>
+					</div>
+					<div class="icon iconWImg iconMood" id="moodIcon4">
+						<img src="img/5.svg" alt="">
+						<h3 class="txt txtMood">голова4</h3>
+					</div>
 					<div class="btnUp" id="moodUp">
 							<img src="img/arrow-up.png" alt="">
 					</div>
-				<div class="btnDown" id="moodDown">
-					<img src="img/arrow-down.png" alt="">
+					<div class="btnDown" id="moodDown">
+						<img src="img/arrow-down.png" alt="">
+					</div>		
 				</div>		
-			</div>		
-		</div> 
-		
-	</div>
+			</div>
+			
+			<div class="border borderWish inactive">
+				<div class="slider sliderWish">
+					<div class="icon iconWImg iconWish">
+						<img src="img/1.png" alt="">
+						<h3 class="txt txtWish">Расслаблен</h3>
+					</div>
+					<div class="icon iconWImg iconWish" id="moodIcon1">
+						<img src="img/2.png" alt="">
+						<h3 class="txt txtWish">Влюблен</h3>
+					</div>
+					<div class="icon iconWImg iconWish" id="moodIcon2">
+						<img src="img/3.png" alt="">
+						<h3 class="txt txtWish">Повеселиться</h3>
+					</div>
+					<div class="icon iconWImg iconWish" id="moodIcon3">
+						<img src="img/4.png" alt="">
+						<h3 class="txt txtWish">Поработать</h3>
+					</div>
+					<div class="icon iconWImg iconWish" id="moodIcon4">
+						<img src="img/5.png" alt="">
+						<h3 class="txt txtWish">Медитировать</h3>
+					</div>		
+						<div class="btnUp" id="moodUp">
+								<img src="img/arrow-up.png" alt="">
+						</div>
+					<div class="btnDown" id="moodDown">
+						<img src="img/arrow-down.png" alt="">
+					</div>		
+				</div>		
+			</div> 
+		</div><!-- Конец слайдера выбора настроений --> 
+		<!-- Слайдер результатов  -->
+	    <div id="ver1" class="sliders">
+	     	<div class="wrapForResult">
+		      <div class="btn goBack nonActive">
+		         <img src="images/arrow%20left.png" alt="">
+		       </div>
+		       <!-- Здесь хранятся кочтеры-результаты -->
+			<div class="resultBar">
+			<!--    1 block-->
+			     <div class="resultIcon goRight1">
+			      <div class="resultIconPic" >
+			        <div class="textResult nonActive">
+			          <p class="longText">Визуалиация своих целей - первый шаг на пути к их достижению! <br> Создай  картину желаний, приблизь свою мечту к реальности.</p>
+			          <div class="links">
+					  <a href="#"> <img src="images/facebook55.png" alt=""></a>
+					  <a href="#"> <img src="images/logotype165.png" alt=""></a>
+					  </div>
+			        </div>
+				    <div class="picResult">
+						<img src="images/map.png" alt="">
+					</div>
+					
+			      </div>
+					<div class="blockName">
+					  <p class="resultName text">Составить карту успеха</p>
+					  
+					</div>
+			     </div>		
+			     
+			     
+			<!--     /// 2 block -->
+			          <div class="resultIcon goRight2">
+			      <div class="resultIconPic" >
+			        <div class="textResult nonActive ">
+			          <p class="longText">Визуалиация своих целей - первый шаг на пути к их достижению! <br> Создай  картину желаний, приблизь свою мечту к реальности.</p>
+			          <div class="links">
+					  <a href="#"> <img src="images/facebook55.png" alt=""></a>
+					  <a href="#"> <img src="images/logotype165.png" alt=""></a>
+					  </div>
+			        </div>
+				    <div class="picResult">
+						<img src="images/cafe.png" alt="">
+					</div>
+					
+			      </div>
+					<div class="blockName">
+					  <p class=" text resultName">Cходить в кафе</p>
+					  
+					</div>
+			     </div>	
+			     
+			<!--     3 block-->
+			     <div class="resultIcon goRight3">
+			      <div class="resultIconPic" >
+			        <div class="textResult nonActive">
+			        <p class="longText">Визуалиация своих целей - первый шаг на пути к их достижению! <br> Создай  картину желаний, приблизь свою мечту к реальности.</p>
+			        <div class="links">
+					  <a href="#"> <img src="images/facebook55.png" alt=""></a>
+					  <a href="#"> <img src="images/logotype165.png" alt=""></a>
+					  </div>
+			        </div>
+				    <div class="picResult">
+						<img src="images/bath.png" alt="">
+					</div>
+					
+			      </div>
+					<div class="blockName">
+					  <p class="text resultName">Принять ванну</p>
+					</div>
+						</div>	<!-- Конец блока3 -->
+			    	</div> <!-- Конец Resulbar -->
+		          </div><!-- ///WrapforResult///-->
+		    </div><!-- Конец слайдера результатов -->
 
-		<!-- Конец слайдера выбора настроений --> 
-
-		</main>
+	</div><!-- Конец глобального слайдера -->
+</main>
 
 		<!-- Footer -->
-		<footer class="footer"></footer>
+	<footer class="footer"></footer>
 
 		
 		

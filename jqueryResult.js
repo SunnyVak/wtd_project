@@ -126,4 +126,93 @@ $(document).ready(function(){
 			});	
 		}
 	}
+
 })
+
+
+$(document).ready(function() {
+ 
+ 
+  
+//Slider Main
+  //b - ширина картинки или окно
+  var b = 1200;
+  var delta = 0;
+  var a = $(".sliders");
+  for (var i=0; i < a.length; i++) {
+    $(a[i]).css("left", delta + "px");
+    delta = delta + b;
+  }
+  //действия при клике next
+  $(".go").click(function() {
+    // Удаляем стрелочку вперед 
+    $(".go").addClass("nonActive");
+    $(a).animate ({left: "-=1200px"}, 1000, "linear", check)
+      
+  });
+  
+  function check () {
+    if($(this).css("left") === "-1200px") {
+      $(this).css("left", b*(a.length-1)+"px");
+    }
+    // меняем текст заголвка 
+    $(".headerTextPageTwo").removeClass("nonActive");
+    $(".headerTextPageOne").addClass("nonActive"); 
+  // Возвращаем стрелочку назад 
+     $(".goBack").removeClass("nonActive");
+  }
+  
+  //действия при клике back
+  
+  $(".goBack").click(function() {
+  //Удаляем стрелочку назад 
+     $(".goBack").addClass("nonActive");
+	for (var i = 0; i < a.length; i++) {
+	 if ($(a[i]).css("left") === "1200px"){
+	  $(a[i]).css("left", "-1200px")
+    }
+  }
+    $(a).animate({left: "+=1200px"}, 1000, "linear", btnBack)
+});
+  
+  function btnBack () {
+    // Появляется стралочка вперед 
+    $(".go").removeClass("nonActive");
+    //Меняем текст в заголовке 
+    $(".headerTextPageTwo").addClass("nonActive");
+    $(".headerTextPageOne").removeClass("nonActive"); 
+  }
+
+
+  
+  // центруем картинки 
+
+    var picsResult = $('.picResult>img');
+	var textsResult = $('.textResult');
+	var iconHeight = 226;
+  
+  $('.picResult>img').each(function(){
+    var picHeight = $(picsResult).height();
+    // var iconHeight = $(".resultIconPic").height();
+    var center = (iconHeight - picHeight)/2;
+ 
+
+    if (picHeight < (iconHeight/2)) {
+      $(this).css({"padding-top": "13px" });
+    }
+    else {
+    $(this).css({"padding-top": center + "px" });
+    }
+  });
+
+
+// Переворачиваем картинки - текст 
+  $(".resultIconPic").mouseover(function() {
+    $(this).children(":first").removeClass("nonActive");
+  });
+  $(".resultIconPic").mouseout(function() {
+    $(this).children(":first").addClass("nonActive");
+  });
+  
+
+});
