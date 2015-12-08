@@ -40,35 +40,39 @@ $(document).ready(function(){
 	});
 	
 	//setting day of week
-	var thisArrow = $(".sliderDow > .btnUp");
+	var thisDowNavigator = $(".sliderDow > .btnUp");
 	var dow = date.getDay();
-	for (var i = 2; i < dow; i++) {
-		rotateUp(thisArrow);
-		i += 1;
-		console.log(i);
-	}
+	setCurrentSlider((dow + 11), thisDowNavigator);
 	
-	// //setting time of day
-	// var thisPod;
-	// var hours = date.getHours();
+	//setting time of day
+	var thisPodNavigator = $(".sliderPod > .btnUp");
+	var hours = date.getHours(); alert(hours);
+	if (18 <= hours < 20) {setCurrentSlider(3, thisPodNavigator)}
 	// if (5 <= hours < 8) {
-	// 	thisPod = 6;
+	// 	currentPod(6);
 	// } else if (8 < hours < 9) {
-	// 	thisPod = 0;
+	// 	currentPod(0);
 	// } else if (9 <= hours < 17) {
-	// 	thisPod = 1;
+	// 	currentPod(1);
 	// } else if (17 <= hours < 20) {
-	// 	thisPod = 2;
-	// }  else if (20 <= hours < 23) {
-	// 	thisPod = 3;
+	// 	currentPod(2);
+	// 	alert("!");
+	// } else if (20 <= hours < 23) {
+	// 	currentPod(3);
 	// 	// пщздний вечер
 	// }  else if (23 <= hours < 1) {
-	// 	thisPod = 4;
+	// 	currentPod(4);
 	// 	// ночь
-	// } else (1 <= hours < 5) {
-	// 	thisPod = 4;
+	// } else {
+	// 	currentPod(5);
 	// 	//глубокая ночь
 	// }
+	function setCurrentSlider(index, sliderControl) {
+		for (var i = 0; i < index; i++) {
+			rotateUp(sliderControl);
+			i += 1;
+		}	
+	}
 	
 	//opening slider
 	$(".slider").mouseenter(function(){
@@ -92,6 +96,7 @@ $(document).ready(function(){
 	
 	//control with arrows
 	function rotateUp(thisObj){
+		alert("we aare in");
 		var parnt = thisObj.parent();
 		// var iconHeight = parseInt($('.icon').height()); //not working properly
 		var iconHeight = 98;
