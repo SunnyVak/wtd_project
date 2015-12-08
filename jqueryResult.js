@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-	var iconHeight = 98;	
+	var iconHeight = 98;
+	var date = new Date();	
 	 
 	$(".slider").mouseleave(closeSlider);
 	
@@ -39,15 +40,35 @@ $(document).ready(function(){
 	});
 	
 	//setting day of week
-	var thisArrow = $(".sliderDow > .btnDown");
-	console.log(thisArrow);
-	var date = new Date();
+	var thisArrow = $(".sliderDow > .btnUp");
 	var dow = date.getDay();
-	for (var i = 0; i < dow; i++) {
+	for (var i = 2; i < dow; i++) {
 		rotateUp(thisArrow);
 		i += 1;
 		console.log(i);
 	}
+	
+	// //setting time of day
+	// var thisPod;
+	// var hours = date.getHours();
+	// if (5 <= hours < 8) {
+	// 	thisPod = 6;
+	// } else if (8 < hours < 9) {
+	// 	thisPod = 0;
+	// } else if (9 <= hours < 17) {
+	// 	thisPod = 1;
+	// } else if (17 <= hours < 20) {
+	// 	thisPod = 2;
+	// }  else if (20 <= hours < 23) {
+	// 	thisPod = 3;
+	// 	// пщздний вечер
+	// }  else if (23 <= hours < 1) {
+	// 	thisPod = 4;
+	// 	// ночь
+	// } else (1 <= hours < 5) {
+	// 	thisPod = 4;
+	// 	//глубокая ночь
+	// }
 	
 	//opening slider
 	$(".slider").mouseenter(function(){
